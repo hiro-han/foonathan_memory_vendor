@@ -12,6 +12,8 @@ execute_process(COMMAND
   ERROR_QUIET
   RESULT_VARIABLE _EXIT_CODE)
 
+SET(_EXIT_CODE 1)
+
 if(NOT _EXIT_CODE EQUAL 0)
   ###############################################################################
   # Default shared libraries
